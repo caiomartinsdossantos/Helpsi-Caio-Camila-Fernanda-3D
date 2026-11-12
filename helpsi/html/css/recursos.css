@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5faf6;
+    color: #263b32;
+}
+
+.header {
+    background: linear-gradient(135deg, #145c3b, #36a269);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.header p {
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.navbar {
+    background: #145c3b !important;
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+main {
+    padding: 60px 0;
+}
+
+h2 {
+    color: #176b43;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+h5 {
+    color: #208653;
+    font-weight: 700;
+}
+
+main p {
+    color: #617268;
+    line-height: 1.8;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(20,92,59,0.13);
+}
+
+.card-body {
+    padding: 28px;
+}
+
+.btn-green {
+    background: #208653;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.btn-green:hover {
+    background: #145c3b;
+    color: white;
+}
+
+.education-section {
+    background: #eaf5ed;
+    padding: 40px;
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+footer {
+    background: #123d2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 768px) {
+    .header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 35px 15px;
+    }
+
+    .education-section {
+        padding: 25px;
+    }
+}

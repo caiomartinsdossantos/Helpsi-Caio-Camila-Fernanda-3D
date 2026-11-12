@@ -1,0 +1,517 @@
+
+:root {
+    --green: #174b3b;
+    --green-light: #d9f36a;
+    --cream: #f6f7f1;
+    --text: #202a25;
+    --muted: #69746e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+}
+
+.navbar {
+    padding: 22px 0;
+    background: var(--cream);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--green);
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    color: var(--green);
+}
+
+.logo-icon svg {
+    width: 100%;
+}
+
+.brand-dot {
+    color: #9abf39;
+}
+
+.nav-link {
+    color: #526059;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.nav-link:hover {
+    color: var(--green);
+}
+
+.nav-contact {
+    background: var(--green);
+    color: white !important;
+    border-radius: 30px;
+    padding: 11px 20px !important;
+}
+
+.hero {
+    min-height: 620px;
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 50px;
+    padding-top: 65px;
+    padding-bottom: 85px;
+}
+
+.eyebrow, .section-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--green);
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #9abf39;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 7vw, 91px);
+    line-height: .99;
+    letter-spacing: -6px;
+    font-weight: 800;
+    margin: 28px 0;
+}
+
+.hero h1 span {
+    color: #799b37;
+}
+
+.hero-content > p {
+    max-width: 440px;
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-top: 32px;
+}
+
+.btn-main {
+    background: var(--green);
+    color: white;
+    padding: 15px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn-main:hover {
+    background: #286b51;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn-main span {
+    margin-left: 15px;
+}
+
+.text-link {
+    color: var(--green);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.hero-visual {
+    height: 480px;
+    background: var(--green);
+    border-radius: 8px;
+    padding: 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+.visual-top, .visual-bottom {
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visual-art {
+    position: relative;
+    height: 300px;
+    display: grid;
+    place-items: center;
+}
+
+.orbit {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(255,255,255,.22);
+    border-radius: 50%;
+}
+
+.orbit-two {
+    width: 330px;
+    height: 330px;
+    border-style: dashed;
+    animation: rotate 35s linear infinite;
+}
+
+.art-center {
+    width: 180px;
+    height: 180px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--green-light);
+    color: var(--green);
+    z-index: 1;
+}
+
+.art-center svg {
+    width: 105px;
+}
+
+.floating-label {
+    position: absolute;
+    right: 5%;
+    bottom: 12%;
+    background: white;
+    color: var(--green);
+    padding: 12px 17px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    transform: rotate(-5deg);
+}
+
+.intro-section {
+    padding-top: 100px;
+    padding-bottom: 110px;
+    border-top: 1px solid #dfe4dc;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr .7fr;
+    gap: 100px;
+    margin-top: 35px;
+}
+
+.intro-grid h2, .section-heading h2 {
+    font-size: clamp(35px, 4.5vw, 57px);
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: -2.8px;
+}
+
+.intro-grid h2 span {
+    color: #799b37;
+}
+
+.intro-grid p {
+    color: var(--muted);
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.explore-section {
+    padding-top: 35px;
+    padding-bottom: 120px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 42px;
+}
+
+.section-heading h2 {
+    margin-top: 20px;
+}
+
+.section-heading > p {
+    max-width: 260px;
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    grid-template-rows: 260px 260px;
+    gap: 18px;
+}
+
+.bento-card {
+    text-decoration: none;
+    color: var(--text);
+    border-radius: 8px;
+    padding: 27px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .3s ease;
+}
+
+.bento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(23,75,59,.10);
+}
+
+.card-number, .quote-caption {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.therapy-card {
+    grid-row: span 2;
+    background: var(--green);
+    color: white;
+}
+
+.therapy-card h3 {
+    font-size: 48px;
+    line-height: 1.03;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+.therapy-card p, .resources-card p, .groups-card p {
+    max-width: 330px;
+    font-size: 13px;
+    line-height: 1.7;
+    opacity: .8;
+    margin-top: 13px;
+}
+
+.card-symbol {
+    position: absolute;
+    right: 35px;
+    top: 50px;
+    font-size: 100px;
+    color: var(--green-light);
+    opacity: .8;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.resources-card {
+    background: var(--green-light);
+}
+
+.resources-card h3, .groups-card h3 {
+    font-size: 31px;
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.resource-decoration {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 65px;
+    color: #698b30;
+}
+
+.groups-card {
+    background: #e6eae1;
+}
+
+.group-decoration {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 85px;
+    color: #799b37;
+}
+
+.quote-card {
+    display: none;
+    background: #e6eae1;
+}
+
+.quote-mark {
+    font-size: 55px;
+    color: #799b37;
+}
+
+.closing-section {
+    background: var(--green);
+    color: white;
+    padding: 100px 0;
+}
+
+.closing-content {
+    text-align: center;
+}
+
+.closing-section .eyebrow {
+    color: var(--green-light);
+}
+
+.closing-section h2 {
+    font-size: clamp(42px, 6vw, 70px);
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1.05;
+    margin: 25px 0;
+}
+
+.closing-section p {
+    color: #c4d3ca;
+    max-width: 480px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.btn-light {
+    display: inline-block;
+    background: var(--green-light);
+    color: var(--green);
+    padding: 15px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.btn-light:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.footer {
+    padding: 27px 0;
+    background: #10382c;
+    color: #b7c9be;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer .navbar-brand {
+    color: white;
+    font-size: 23px;
+}
+
+.footer-content > span {
+    font-size: 11px;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+        gap: 45px;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .hero-visual {
+        height: 390px;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .section-heading {
+        display: block;
+    }
+
+    .section-heading > p {
+        margin-top: 20px;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .bento-card {
+        min-height: 250px;
+    }
+
+    .therapy-card {
+        grid-row: auto;
+        min-height: 370px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+}
